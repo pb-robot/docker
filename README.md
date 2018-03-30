@@ -12,11 +12,11 @@ You also need Gazebo7 in your host machine to open simulator GUI (Gazebo downloa
 ## Build docker image and run container 
 
 First you need to build pb:base, then pb:sim_base, then pb:sim_stack and finally pb:sim_latest.
-The easiest way to build docker image is to run the following command inside the directory of each Dockerfile. Extensive Docker documentation for building images: https://docs.docker.com/engine/reference/commandline/build/ .
+The easiest way to build docker image is to run the following command inside the directory of each Dockerfile. To tag an image use directory name of a Dockerfile (for example pb:sim_latest, then repository name will be "pb" and tag "sim_latest"). Extensive Docker documentation for building images: https://docs.docker.com/engine/reference/commandline/build/ .
 
 Build docker image from Dockerfile:
 ```
-$ docker build -t Dockerfile .
+$ docker build -t [repo:tagname] .
 ```
 
 To see repository name, tag name and other information about built images use the following command:
