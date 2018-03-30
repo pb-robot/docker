@@ -6,5 +6,5 @@ RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/
     rosdep init && \
     rosdep update && \
     mkdir -p /catkin_ws/src && \
-    /bin/bash -c 'echo "source /opt/ros/lunar/setup.bash" >> /.bashrc && source /.bashrc && cd /catkin_ws && catkin_make' && \
-    /bin/bash -c 'echo "source /catkin_ws/devel/setup.bash" >> /.bashrc && source /.bashrc'
+    /bin/bash -c 'echo "source /opt/ros/lunar/setup.bash" >> /root/.bashrc && source /root/.bashrc && cd /catkin_ws && catkin_make' && \
+    /bin/bash -c 'echo "source /catkin_ws/devel/setup.bash" >> /root/.bashrc && source /root/.bashrc'
