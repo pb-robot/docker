@@ -12,4 +12,4 @@ RUN cd /catkin_ws/src && \
     git clone https://github.com/ros-perception/laser_proc.git && \
     git clone https://github.com/ros-drivers/urg_c.git && \
     apt-get install -y ros-lunar-moveit && \
-    /bin/bash -c 'source /root/.bashrc && cd /catkin_ws && catkin_make -DCMAKE_CXX_FLAGS="-std=c++11"'
+    /bin/bash -c 'source /.bashrc && cd /catkin_ws && catkin_make -DCMAKE_CXX_FLAGS="-std=c++11"'
