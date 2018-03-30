@@ -35,16 +35,6 @@ $ docker run -it --name [name] [repo:tagname]
 ## Open phoebe model in Gazebo
 To use Gazebo you have to build pb:base, pb:sim_base, pb:sim_stack, pb:sim_latest images and run only pb:sim_latest container that you have named "master".
 
-### Note about sourcing catkin workspace:
-At the momenent you have to source catkin workspace by yourselt. One way to do it is to write the following command into the every container shell you open:
-```
-$ source /catkin_ws/devel/setup.bash
-```
-Another way is to write the following command into the first shell of the container, this way catkin workspace is automatically sourced every time a new shell is launched:
-```
-$ echo "/catkin_ws/devel/setup.bash" >> ~/.bashrc
-```
-
 ### Open the model in Gazebo
 
 In the opened container run roscore:
