@@ -51,7 +51,7 @@ $ rosparam set /use_sim_time true
 ```
 Open world in gazebo. There are many worlds that come with Gazebo installation in /usr/share/gazebo-7/worlds directory in Ubuntu.
 ```
-$ rosrun gazebo_ros gzserver -u --verbose /usr/share/gazebo-7/empty.world  
+$ rosrun gazebo_ros gzserver -u --verbose /usr/share/gazebo-7/worlds/empty.world  
 ```
 Then open another shell and create a bash session like explained before. In that shell spawn phoebe model into the world:
 ```
